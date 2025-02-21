@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Guitar Survey</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This is a survey for all people who play guitar! 
+                This gathers a consensus of all kinds of guitar players, to see 
+                whats common amongst the community!
+            </p>
+        </div>
+        <form id="survey-form">
+            <fieldset class="personal-information">
+                <legend>Personal Information</legend>
+                <div class="name">
+                    <label id="name-label">Name (Required)</label>
+                    <input type="text"
+                           name="name"
+                           placeholder="Enter your first and last name"
+                           id="name"
+                           required>                
+                </div>
+                <div class="email">
+                    <label id="email-label">Email (Required)</label>
+                    <input type="email"
+                           name="email"
+                           placeholder="example@gmail.com"
+                           id="email"
+                           required>
+                </div>
+                <div class="age">
+                    <label id="number-label">Age (Optional)</label>
+                    <input type="number"
+                           name="age"
+                           placeholder="10-100"
+                           max="100"
+                           min="10"
+                           id="number">
+                </div>
+            </fieldset>
+            <fieldset class="guitar-information">
+                <legend>Guitar Information</legend>
+                <div class="dropdown">
+                    <p>How many days a week do you practice? (Required)</p>
+                    <select id="dropdown" required>
+                        <option value="">Select an option</option>
+                        <option value="1">1 Day</option>
+                        <option value="2">2 Days</option>
+                        <option value="3">3 Days</option>
+                        <option value="4">4 Days</option>
+                        <option value="5">5 Days</option>
+                        <option value="6">6 Days</option>
+                        <option value="7">7 Days</option>
+                    </select>
+                </div>
+                <div class="radio">
+                    <p>What kind of guitar do you play? (Required)</p>
+                    <div class="radio-item">
+                        <input type="radio"
+                               name="option"
+                               value="1"
+                               id="radio-1"
+                               required>
+                        <label for="radio-1">Acoustic</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio"
+                               name="option"
+                               value="2"
+                               id="radio-2"
+                               required>
+                        <label for="radio-2">Electric</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio"
+                               name="option"
+                               value="3"
+                               id="radio-3"
+                               required>
+                        <label for="radio-3">Both</label>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <p>What guitar brands do you typically buy from? (Required)</p>
+                    <select id="dropdown" required>
+                        <option value="">Select an option</option>
+                        <option value="1">Fender</option>
+                        <option value="2">Gibson</option>
+                        <option value="3">Ibanez</option>
+                        <option value="4">Yamaha</option>
+                        <option value="5">Epiphone</option>
+                        <option value="6">Taylor</option>
+                        <option value="7">PRS</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <p>Which of these statements do you relate to? (Select all that apply)</p>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="option" value="1" id="checkbox-1">
+                        <label for="checkbox-1">Strats are overrated</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="option" value="2" id="checkbox-2">
+                        <label for="checkbox-2">Distortion is the superior effect</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="option" value="3" id="checkbox-3">
+                        <label for="checkbox-3">Rythmn is most important</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="option" value="4" id="checkbox-4">
+                        <label for="checkbox-4">Amps don't matter</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" name="option" value="5" id="checkbox-5">
+                        <label for="checkbox-5">An expensive guitar is better than an expensive amp</label>
+                    </div>
+                <div class="textarea">
+                    <label for="textarea">Tell us about your guitar playing experience!</label>
+                    <textarea id="textarea" rows="5" cols="75" placeholder="Tell us about your guitar playing experience" required></textarea>
+                </div>
+                    <input type="submit" id="submit" value="Submit">
+            </fieldset>  
+        </form>
+    </body>
+</html>
